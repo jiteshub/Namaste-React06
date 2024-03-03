@@ -1,0 +1,79 @@
+const heading = React.createElement('h1',{},'Hello world from react') 
+
+//The line `const heading = React.createElement('h1',{},'Hello world from react')` is creating a React element representing an `<h1>` heading with the text content "Hello world from react".
+
+props = 
+children: "Hello world from react" +
+attribute :{id:'root'}
+
+React.createElement('tag you want to create',{attribute to the tag},'Hello world from react'->Message to add in tag)
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//`const root = ReactDom.createRoot(document.getElementById('root'));` is creating a rootReact component that will be rendered into the HTML element with the id "root". 
+
+
+root.render(heading); -> 
+
+root.render(heading);` is instructing the root React component to render the React element
+`heading` into the HTML element with the id "root". 
+This will display the heading "Hello world from react" on the webpage within the specified HTML element. 
+
+
+
+-----------------------------------------
+
+* This JavaScript code is creating a nested structure of HTML elements using React's `createElement`function.
+
+ The code creates a parent `div` element with an id of 'parent', which contains a child `div` element with an id of 'child'. 
+ 
+ Inside the child `div`, there are two sibling elements: an `h1`
+element with the text 'I am h1 tag' and an `h2` element with the text 'I am h2 tag'. */
+
+const siblings = React.createElement(
+    'div',
+    {id:'parent'},
+
+    React.createElement(
+        'div',
+        {id:'child'},
+        
+        [React.createElement('h1',{},'I am h1 tag'),React.createElement('h2',{},'I am h2 tag')]
+    )
+);
+
+console.log(siblings)
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(siblings)
+
+-----------------------------------------
+Nested element using react
+/* The `const parent` code snippet is creating a nested structure of HTML elements using React's
+`createElement` function. */
+
+const parent = React.createElement(
+    'div',
+    {id:'parent'},
+
+    [React.createElement(
+        'div',
+        {id:'child 1'},
+        
+        [React.createElement('h1',{},'I am h1 tag'),React.createElement('h2',{},'I am h2 tag')]
+    ),
+      React.createElement(
+        'div',
+        {id:'child 2'},
+        [React.createElement('h1',{},'I am h1 tag'),React.createElement('h2',{},'I am h2 tag')]
+    )]
+
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(parent)
+
+console.log(parent)
