@@ -1,0 +1,14 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Deep dive React journey",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jitesh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
