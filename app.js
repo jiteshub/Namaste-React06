@@ -1,4 +1,6 @@
-const heading = React.createElement('h1',{id:'heading'},'Hello world from react') 
+import React from "react";
+import ReactDOM  from "react-dom";
+const heading = React.createElement('h1',{id:'heading'},'Parcel is powerful and important part of react') 
 
 //The line `const heading = react.createElement('h1',{},'Hello world from react')` is creating a React element representing an `<h1>` heading with the text content "Hello world from react".
 
