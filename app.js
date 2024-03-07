@@ -1,11 +1,22 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
 
-/* This JavaScript code is using React to create a simple JSX element, which is a heading element
-`<h1>` with the text "This is React element using JSX". */
-const jsxHeading = <h1>This is React element using JSX</h1>
-console.log(jsxHeading);
+/* The `const jsxHeading` is creating a React element using JSX syntax.  */
+const Heading = ()=>(
+    <h1>This is React element using JSX</h1>
+);
+console.log(Heading);
+
+
+const TitleComponent = () =>(
+    <div id="Parent">
+        <Heading/>
+        <h1>This is React functional component</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam fugit quis at explicabo repellendus deleniti quas facere saepe temporibus.</p>
+    </div> 
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<TitleComponent/>);
+

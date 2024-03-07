@@ -91,7 +91,88 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(jsxHeading);
 
+------------------------------------------------------------------------------------
+/**
+ The TitleComponent function is a React functional component that returns an h1 element with the text
+"This is React functional component".
+returns A React functional component named `TitleComponent` is being returned. 
+ */
+const TitleComponent = () =>{
+    return <h1>This is React functional component</h1>
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<TitleComponent/>);
+------------------------------------------------------------------------------------
+/ anouther way creating react functional component
+ *The above function is a React functional component called TitleComponent that renders a parent div
+ * with an h1 element inside.
+ */
+const TitleComponent = () =>(
+    <div id="Parent">
+        <h1>This is React functional component</h1>
+    </div> 
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<TitleComponent/>);
+
+-----------------------------------------------------------------------------------
+adding data of react element into React functional component:
+
+const jsxHeading = (
+    <h1>This is React element using JSX</h1>
+);
+console.log(jsxHeading);
 
 
+const TitleComponent = () =>(
+    <div id="Parent">
+        {jsxHeading} --> embeding react element 
+        <h1>This is React functional component</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam fugit quis at explicabo repellendus deleniti quas facere saepe temporibus.</p>
+    </div> 
+);
 
- 
+------------------------------------------------------------------------------------
+Adding data of one react function into anouther
+
+const Heading = ()=>(
+    <h1>This is React element using JSX</h1>
+);
+console.log(Heading);
+
+
+const TitleComponent = () =>(
+    <div id="Parent">
+        <Heading/> //component Composition
+        <h1>This is React functional component</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam fugit quis at explicabo repellendus deleniti quas facere saepe temporibus.</p>
+    </div> 
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<TitleComponent/>);
+
+Adding data from component to element to function another way:
+
+const Heading = ()=>(
+    <h1>This is React element using JSX</h1>
+);
+console.log(Heading);
+
+
+const TitleComponent = () =>(
+    <div id="Parent">
+        {Heading()} //component Composition
+        <h1>This is React functional component</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam fugit quis at explicabo repellendus deleniti quas facere saepe temporibus.</p>
+    </div> 
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<TitleComponent/>);
