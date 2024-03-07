@@ -3,7 +3,7 @@
 
 
 
-Namaste React Theory Ep 2
+Namaste React Theory Ep 2 assignment notes
 
 What is `NPM`?
 npm is the world's largest software registry.
@@ -137,3 +137,40 @@ dist folder is the build folder which contains all the files and folders which c
 
 ● - What is `browserlists`
 browserslist is a configuration file that determines which browsers your project should support
+
+------------------------------------------------------------------------------------
+
+Namaste reap ep2:
+
+npm-> npm is the package manager for JavaScript.
+
+npm init -> use to create package.json
+
+package.json -> used to manage dependencies.
+
+dependencies are of two types:
+Dev-dependencies - which are use for development phase.
+Dependencies - Which are use for development as well as production.
+
+npm install -D parcel-> -D represents the package is being installed as Dev-dependencies 
+for development purpose.
+
+package-lock.json -> keeps track of exact version of package/dependencies installed for 
+project and also makes sure that same are delivered for production
+
+"^2.12.0" - ^ this symbol is know as carel  it helps to update the installed package 
+or dependencies.
+^ caret updates to minor version of dependencies automatically.
+
+~ this symbol is know as Tilde which is responsible for updating  and install major 
+version of dependencies.
+
+Node_modules is like a collection / database of packages/dependencies required for 
+our project.
+
+npm install -> install Node_modules
+
+Transitive dependencies: In simple terms, a transitive dependency occurs when one package 
+you rely on needs another package, and that other package needs a third package. 
+It's like a chain reaction of dependencies.
+

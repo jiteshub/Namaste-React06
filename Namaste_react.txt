@@ -1,18 +1,12 @@
+element created using Core React:
+
 const heading = React.createElement('h1',{},'Hello world from react') 
 
 //The line `const heading = React.createElement('h1',{},'Hello world from react')` is creating a React element representing an `<h1>` heading with the text content "Hello world from react".
 
-props = 
-children: "Hello world from react" +
-attribute :{id:'root'}
-
-React.createElement('tag you want to create',{attribute to the tag},'Hello world from react'->Message to add in tag)
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //`const root = ReactDom.createRoot(document.getElementById('root'));` is creating a rootReact component that will be rendered into the HTML element with the id "root". 
-
 
 root.render(heading); -> 
 
@@ -20,9 +14,14 @@ root.render(heading);` is instructing the root React component to render the Rea
 `heading` into the HTML element with the id "root". 
 This will display the heading "Hello world from react" on the webpage within the specified HTML element. 
 
+props = 
+children: "Hello world from react" +
+attribute :{id:'root'}
 
+React.createElement('tag you want to create',{attribute to the tag},'Hello world from react'->Message to add in tag)
 
------------------------------------------
+------------------------------------------------------------------------------------
+//Siblings in React element
 
 * This JavaScript code is creating a nested structure of HTML elements using React's `createElement`function.
 
@@ -39,7 +38,7 @@ const siblings = React.createElement(
         'div',
         {id:'child'},
         
-        [React.createElement('h1',{},'I am h1 tag'),React.createElement('h2',{},'I am h2 tag')]
+        [React.createElement('h1',{},'I am h1 tag'),React.createElement('h2',{},'I am h2 tag')] //siblings
     )
 );
 
@@ -78,42 +77,19 @@ root.render(parent)
 
 console.log(parent)
 
--------------------------------------------------------------------------------------------
-Namaste reap ep2:
+------------------------------------------------------------------------------------
+React element  using JSX
 
-npm-> npm is the package manager for JavaScript.
+const jsxHeading  = <h1>This is React element using JSX</h1>
 
-npm init -> use to create package.json
+/* This JavaScript code is using React to create a simple JSX element, which is a heading element
+`<h1>` with the text "This is React element using JSX". */
+const jsxHeading = <h1>This is React element using JSX</h1>
+console.log(jsxHeading);
 
-package.json -> used to manage dependencies.
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-dependencies are of two types:
-Dev-dependencies - which are use for development phase.
-Dependencies - Which are use for development as well as production.
-
-npm install -D parcel-> -D represents the package is being installed as Dev-dependencies 
-for development purpose.
-
-package-lock.json -> keeps track of exact version of package/dependencies installed for 
-project and also makes sure that same are delivered for production
-
-"^2.12.0" - ^ this symbol is know as carel  it helps to update the installed package 
-or dependencies.
-^ caret updates to minor version of dependencies automatically.
-
-~ this symbol is know as Tilde which is responsible for updating  and install major 
-version of dependencies.
-
-Node_modules is like a collection / database of packages/dependencies required for 
-our project.
-
-npm install -> install Node_modules
-
-Transitive dependencies: In simple terms, a transitive dependency occurs when one package 
-you rely on needs another package, and that other package needs a third package. 
-It's like a chain reaction of dependencies.
-
-
+root.render(jsxHeading);
 
 
 

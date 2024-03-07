@@ -1,19 +1,11 @@
 import React from "react";
-import ReactDOM  from "react-dom";
-const heading = React.createElement('h1',{id:'heading'},'Parcel is powerful and important part of react') 
+import ReactDOM  from "react-dom/client";
 
-//The line `const heading = react.createElement('h1',{},'Hello world from react')` is creating a React element representing an `<h1>` heading with the text content "Hello world from react".
-
+/* This JavaScript code is using React to create a simple JSX element, which is a heading element
+`<h1>` with the text "This is React element using JSX". */
+const jsxHeading = <h1>This is React element using JSX</h1>
+console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//`const root = ReactDom.createRoot(document.getElementById('root'));` is creating a rootReact component that will be rendered into the HTML element with the id "root". 
-
-/* `*/
-root.render(heading);
-
-// console.log(heading)
-
-// nested html structure using react
-
-
+root.render(jsxHeading);
