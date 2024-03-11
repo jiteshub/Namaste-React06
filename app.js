@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
 
-/* The `const jsxHeading` is creating a React element using JSX syntax.  */
+
+
 const Heading = ()=>(
     <h1>This is React element using JSX</h1>
 );

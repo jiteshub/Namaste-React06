@@ -84,6 +84,7 @@ const jsxHeading  = <h1>This is React element using JSX</h1>
 
 /* This JavaScript code is using React to create a simple JSX element, which is a heading element
 `<h1>` with the text "This is React element using JSX". */
+
 const jsxHeading = <h1>This is React element using JSX</h1>
 console.log(jsxHeading);
 
@@ -92,11 +93,13 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(jsxHeading);
 
 ------------------------------------------------------------------------------------
-/**
+/**React functional component:
+
  The TitleComponent function is a React functional component that returns an h1 element with the text
 "This is React functional component".
 returns A React functional component named `TitleComponent` is being returned. 
  */
+ 
 const TitleComponent = () =>{
     return <h1>This is React functional component</h1>
 };
@@ -156,7 +159,7 @@ const TitleComponent = () =>(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<TitleComponent/>);
-
+------------------------------------------------------------------------------------
 Adding data from component to element to function another way:
 
 const Heading = ()=>(
@@ -176,3 +179,4 @@ const TitleComponent = () =>(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<TitleComponent/>);
+------------------------------------------------------------------------------------
