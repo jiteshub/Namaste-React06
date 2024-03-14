@@ -180,3 +180,246 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<TitleComponent/>);
 ------------------------------------------------------------------------------------
+Destructured Props:
+
+/* The `const RestaurantCard = ({resname , Cuisine, rating , delivery}) => {` is defining a functional
+component in React called `RestaurantCard`. This component takes in an object as its props with
+properties `resname`, `Cuisine`, `rating`, and `delivery`. */
+
+ const RestaurantCard = ({resname , Cuisine, rating , delivery}) => {
+  return (
+    <div className="res-card">
+      <div className="imgBx">
+        <img src={motichur} alt="Motichur_Laddu" className="res-img" />
+      </div>
+      <div className="content">
+        <h3>{resname}</h3>
+        <h4>{Cuisine}</h4>
+        <h4>{rating}</h4>
+        <h4>{delivery}</h4>
+      </div>
+    </div>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Laddoo"
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Samosa"
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+      </div>
+    </div>
+  );
+
+-------------------------------------------------------------------------------------
+Normal Props:
+
+/**
+ * The code defines a React component for a restaurant card and a body component that displays multiple
+ * restaurant cards with different information.
+ 
+ * @param props - In the `RestaurantCard` component, the `props` object contains the following
+ * properties:
+ * @returns The code snippet provided is a React component that defines a `RestaurantCard` component
+ * and a `Body` component.
+ */
+const RestaurantCard = (props) => {
+  return (
+    <div className="res-card">
+      <div className="imgBx">
+        <img src={motichur} alt="Motichur_Laddu" className="res-img" />
+      </div>
+      <div className="content">
+        <h3>{props.resname}</h3>
+        <h4>{props.Cuisine}</h4>
+        <h4>{props.rating}</h4>
+        <h4>{props.delivery}</h4>
+      </div>
+    </div>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Laddoo"
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Samosa"
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+      </div>
+    </div>
+  );
+};
+-----------------------------------------------------------------------------------
+Props destructuring part 2
+/**
+ * The RestaurantCard function takes in props and destructures the properties resname, Cuisine,delivery, and rating from the props object.
+ * @param props - props is an object that contains the following properties:
+ */
+
+const RestaurantCard = (props) => {
+  const{resname,Cuisine,delivery,rating} = props --> destructuring of props
+
+  return (
+    <div className="res-card">
+      <div className="imgBx">
+        <img src={motichur} alt="Motichur_Laddu" className="res-img" />
+      </div>
+      <div className="content">
+        <h3>{resname}</h3>
+        <h4>{Cuisine}</h4>
+        <h4>{rating}</h4>
+        <h4>{delivery}</h4>
+      </div>
+    </div>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Laddoo" ---->Props (properties of RestaurantCard)
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+        <RestaurantCard
+          resname="Kaka Halwai"
+          Cuisine="Cuisine: Samosa"
+          rating="Rating: 4.3"
+          delivery="Delivery: 30min"
+        />
+      </div>
+    </div>
+  );
+};
+
+-----------------------------------------------------------------------------------
+Dynamic ui using props :
+
+/* The code snippet provided defines an array `reslist` containing objects representing different food
+items with properties like id, image URL, category, product name, price, and quantity. */
+
+const reslist = [
+    {
+      "id": 118,
+      "image": "https://i.postimg.cc/634bfgPW/mali-sandwich.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Malai Sandwich",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 106,
+      "image": "https://i.postimg.cc/RhRc90HP/kaju-katli2.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju Katli",
+      "price": 650,
+      "quantity": "500g"
+    },
+    {
+      "id": 101,
+      "image": "https://i.postimg.cc/FFSY514G/Lasun-Sev.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Lasun Sev",
+      "price": 70,
+      "quantity": "500g"
+    },
+    {
+      "id": 120,
+      "image": "https://i.postimg.cc/J76czPYK/Gulab-Barfi.jpg",
+      "Category": "Barfi",
+      "Product_name": "Gulab barfi",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 107,
+      "image": "https://i.postimg.cc/KYJmySqZ/badam-halwa.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Badam halwa",
+      "price": 820,
+      "quantity": "500g"
+    },
+    {
+      "id": 123,
+      "image": "https://i.postimg.cc/RC6Ls2Tf/motichure-laddu-1.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Motichur laddu",
+      "price": 350,
+      "quantity": "500g"
+    }
+  ];
+
+const RestaurantCard = (props) => {
+  const { resData } = props;
+
+  const{image,Product_name,price,quantity} = resData
+
+  return (
+    <div className="res-card">
+      <div className="imgBx">
+        <img src={image} alt="Motichur_Laddu" className="res-img" />
+      </div>
+      <div className="content">
+        <h3>Product: <br />{Product_name}</h3>
+        <h4>Price: {price}</h4>
+        <h4>Quantity {quantity}</h4>
+      </div>
+    </div>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard resData={reslist[0]} />
+        <RestaurantCard resData={reslist[1]} />
+        <RestaurantCard resData={reslist[2]} />
+        <RestaurantCard resData={reslist[3]} />
+        <RestaurantCard resData={reslist[4]} />
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="App">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+-----------------------------------------------------------------------------------
+To create multiple elements using .map():
+
+/* The code `{reslist.map((Restaurant)=>(<RestaurantCard resData={Restaurant}/>))}` is using
+        the `map` method to iterate over each object in the `reslist` array. For each object
+        (representing a food item), it creates a `RestaurantCard` component and passes the data of that specific food item as props to the `RestaurantCard` component. 
+        This way, it dynamically generates multiple instances of the `RestaurantCard` component, each displaying information
+        about a different food item from the `reslist` array. */

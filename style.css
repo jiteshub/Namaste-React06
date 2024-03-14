@@ -1,3 +1,119 @@
-#heading{
-    color: red;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html , body{
+height: 100%;
+width: 100%;
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid black;
+}
+
+.logo{
+    width: 120px;
+}
+
+.Nav-list > ul{
+  display: flex;  
+}
+
+.Nav-list > ul > li{
+padding: 10px;
+margin: 10px;
+list-style: none;
+padding: 0px 10px;
+font-size: 20px;
+}
+
+.body{
+  border: 1px solid black;
+}
+
+.search{
+  padding: 10px;
+}
+
+.res-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.res-card:hover{
+  border: 1px solid black;
+  cursor:pointer;
+}
+
+.res-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px 37px;
+  padding: 100px 50px;
+}
+
+
+ .res-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 205px;
+  height: 230px;
+  background-color: rgb(219, 223, 227);
+  border-radius: 20px;
+  box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+
+.res-container .res-card:hover{
+  height: 230px;
+}
+
+.res-container .res-card .imgBx{
+  position: absolute;
+  top: 20px;
+  width: 190px;
+  height: 150px;
+  background: #333;
+  border-radius: 12px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.res-container .res-card:hover .imgBx{
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0px 15px 45px rgba(0,0,0,0.2);
+}
+
+.res-container .res-card .content{
+  position: absolute;
+  width: 100%;
+  padding: 0px 30px;
+  top: 200px;
+  height: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  line-height: 25px;
+}
+
+.res-container .res-card:hover .content{
+  height: 250px;
+  top: 60px
+}
+
+.content h2{
+  font: 1.5em;
+  font-weight: 700;
 }
