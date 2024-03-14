@@ -1,0 +1,345 @@
+{
+  "Products": [
+    {
+      "id": 101,
+      "image": "https://i.postimg.cc/FFSY514G/Lasun-Sev.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Lasun Sev",
+      "quantity": "500g",
+      "price": "60"
+    },
+    {
+      "id": 102,
+      "image": "https://i.postimg.cc/1XdBqtvv/Alu-Bhujiya.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Alu Bhujiya",
+      "price": 60,
+      "quantity": "250g"
+    },
+    {
+      "id": 103,
+      "image": "https://i.postimg.cc/fW6DsvK0/bakarwadi2.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Bakarwadi",
+      "price": 60,
+      "quantity": "250g"
+    },
+    {
+      "id": 104,
+      "image": "https://i.postimg.cc/0QYdNnS2/Channa-jor.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Channa jor",
+      "price": 70,
+      "quantity": "250g"
+    },
+    {
+      "id": 105,
+      "image": "https://i.postimg.cc/pXGQypm8/Harbara-dal.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Harbara dal",
+      "price": 60,
+      "quantity": "250g"
+    },
+    {
+      "id": 106,
+      "image": "https://i.postimg.cc/RhRc90HP/kaju-katli2.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju Katli",
+      "price": 650,
+      "quantity": "500g"
+    },
+    {
+      "id": 107,
+      "image": "https://i.postimg.cc/KYJmySqZ/badam-halwa.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Badam halwa",
+      "price": 820,
+      "quantity": "500g"
+    },
+    {
+      "id": 108,
+      "image": "https://i.postimg.cc/xTMJV8Kn/kaju-pista-roll-5-1.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju pista roll",
+      "price": 950,
+      "quantity": "500g"
+    },
+    {
+      "id": 109,
+      "image": "https://i.postimg.cc/qB84k3Zb/Kaju-Dryfruit-Casatta.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju dryfruit casatta",
+      "price": 940,
+      "quantity": "500g"
+    },
+    {
+      "id": 110,
+      "image": "https://i.postimg.cc/7ZctjBD5/Khoya-ghujiya.jpeg",
+      "Category": "Khoya sweets",
+      "Product_name": "Khova Gujja",
+      "price": 400,
+      "quantity": "500g"
+    },
+    {
+      "id": 111,
+      "image": "https://i.postimg.cc/4dpRwYKF/kesar-peda.jpeg",
+      "Category": "Khoya sweets",
+      "Product_name": "Kesar Peda",
+      "price": 430,
+      "quantity": "500g"
+    },
+    {
+      "id": 112,
+      "image": "https://i.postimg.cc/PrxF5LXs/Gulabjam.jpg",
+      "Category": "Khoya sweets",
+      "Product_name": "Gulab Jam",
+      "price": 220,
+      "quantity": "500g"
+    },
+    {
+      "id": 113,
+      "image": "https://i.postimg.cc/Bbtc4Kxm/Matura-peda.jpeg",
+      "Category": "Khoya sweets",
+      "Product_name": "Mathura Peda",
+      "price": 400,
+      "quantity": "500g"
+    },
+    {
+      "id": 114,
+      "image": "https://i.postimg.cc/DzBX0zfH/Angoor-Malai.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Angoor Malai",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 115,
+      "image": "https://i.postimg.cc/GhwVq3rZ/Cham-cham.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Cham Cham",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 116,
+      "image": "https://i.postimg.cc/J06y7Y1X/Recipes-By-Course.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Angoori Petha",
+      "price": 210,
+      "quantity": "500g"
+    },
+    {
+      "id": 118,
+      "image": "https://i.postimg.cc/634bfgPW/mali-sandwich.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Malai Sandwich",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 119,
+      "image": "https://i.postimg.cc/LXhFKx0w/How-to-make-Besan-Barfi-at-Home-Homemade-Besan-Barfi-Recipe-Checkmyrecipe-com.jpg",
+      "Category": "Barfi",
+      "Product_name": "Amba barfi",
+      "price": 320,
+      "quantity": "500g"
+    },
+    {
+      "id": 120,
+      "image": "https://i.postimg.cc/J76czPYK/Gulab-Barfi.jpg",
+      "Category": "Barfi",
+      "Product_name": "Gulab barfi",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 121,
+      "image": "https://i.postimg.cc/Lspjb7h4/Kaju-Anjeer-barfi.jpg",
+      "Category": "Barfi",
+      "Product_name": "Anjeer barfi",
+      "price": 440,
+      "quantity": "500g"
+    },
+    {
+      "id": 122,
+      "image": "https://i.postimg.cc/43WQqgMv/yello-coconut-burfi-1-removebg-preview.png",
+      "Category": "Barfi",
+      "Product_name": "Coconut barfi",
+      "price": 400,
+      "quantity": "500g"
+    },
+    {
+      "id": 123,
+      "image": "https://i.postimg.cc/RC6Ls2Tf/motichure-laddu-1.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Motichur laddu",
+      "price": 350,
+      "quantity": "500g"
+    },
+    {
+      "id": 124,
+      "image": "https://i.postimg.cc/1zbff7Nh/Dink-ladu.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Dink laddu",
+      "price": 300,
+      "quantity": "500g"
+    },
+    {
+      "id": 125,
+      "image": "https://i.postimg.cc/8cpD5Lwg/Kalajam.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Kala jam",
+      "price": 200,
+      "quantity": "500g"
+    },
+    {
+      "id": 126,
+      "image": "https://i.postimg.cc/zBp6x6w4/4498186-removebg-preview.png",
+      "Category": "Traditional sweets",
+      "Product_name": "Jalebi",
+      "quantity": "500g",
+      "price": 220
+    }
+  ],
+  "Users": [
+    {
+      "id": 2,
+      "fname": "Chris",
+      "lname": "stone",
+      "uname": "Chris",
+      "password": "Chris@123"
+    },
+    {
+      "fname": "Jin",
+      "lname": "Stone",
+      "uname": "abc@xyz.com",
+      "password": "jin@321",
+      "id": 3
+    },
+    {
+      "fname": "ron",
+      "lname": "stone",
+      "uname": "ron",
+      "password": "ron123",
+      "id": 4
+    },
+    {
+      "fname": "yash",
+      "lname": "hfkkhfra",
+      "uname": "yc",
+      "password": "yc123",
+      "id": 5
+    },
+    {
+      "fname": "Loid Forger",
+      "lname": "Forger",
+      "uname": "Forger",
+      "password": "Forger",
+      "id": 6
+    },
+    {
+      "fname": "jin",
+      "lname": "stone",
+      "uname": "jin",
+      "password": "jin123",
+      "id": 7
+    },
+    {
+      "fname": "Ravi",
+      "lname": "Sharma",
+      "uname": "ravi",
+      "password": "ravi@123",
+      "id": 8
+    }
+  ],
+  "Admin": [
+    {
+      "uname": "Admin",
+      "password": "Admin@123"
+    }
+  ],
+  "Bestseller": [
+    {
+      "id": 1,
+      "image": "https://i.postimg.cc/1XdBqtvv/Alu-Bhujiya.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Alu Bhujiya",
+      "price": 60,
+      "quantity": "250g"
+    },
+    {
+      "id": 2,
+      "image": "https://i.postimg.cc/RhRc90HP/kaju-katli2.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju Katli",
+      "price": 650,
+      "quantity": "500g"
+    },
+    {
+      "id": 3,
+      "image": "https://i.postimg.cc/FFSY514G/Lasun-Sev.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Lasun Sev",
+      "price": 70,
+      "quantity": "500g"
+    },
+    {
+      "id": 4,
+      "image": "https://i.postimg.cc/RC6Ls2Tf/motichure-laddu-1.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Motichur laddu",
+      "price": 350,
+      "quantity": "500g"
+    }
+  ],
+  "cart": [
+    {
+      "id": 118,
+      "image": "https://i.postimg.cc/634bfgPW/mali-sandwich.jpg",
+      "Category": "Bengali sweets",
+      "Product_name": "Malai Sandwich",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 106,
+      "image": "https://i.postimg.cc/RhRc90HP/kaju-katli2.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Kaju Katli",
+      "price": 650,
+      "quantity": "500g"
+    },
+    {
+      "id": 101,
+      "image": "https://i.postimg.cc/FFSY514G/Lasun-Sev.jpg",
+      "Category": "Namkeen",
+      "Product_name": "Lasun Sev",
+      "price": 70,
+      "quantity": "500g"
+    },
+    {
+      "id": 120,
+      "image": "https://i.postimg.cc/J76czPYK/Gulab-Barfi.jpg",
+      "Category": "Barfi",
+      "Product_name": "Gulab barfi",
+      "price": 240,
+      "quantity": "500g"
+    },
+    {
+      "id": 107,
+      "image": "https://i.postimg.cc/KYJmySqZ/badam-halwa.jpeg",
+      "Category": "Dryfruit sweets",
+      "Product_name": "Badam halwa",
+      "price": 820,
+      "quantity": "500g"
+    },
+    {
+      "id": 123,
+      "image": "https://i.postimg.cc/RC6Ls2Tf/motichure-laddu-1.jpg",
+      "Category": "Traditional sweets",
+      "Product_name": "Motichur laddu",
+      "price": 350,
+      "quantity": "500g"
+    }
+  ]
+}
