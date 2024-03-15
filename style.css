@@ -58,7 +58,7 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px 37px;
+  gap: 100px 37px;
   padding: 100px 50px;
 }
 
@@ -68,8 +68,8 @@ font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 205px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
   background-color: rgb(219, 223, 227);
   border-radius: 20px;
   box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
@@ -77,7 +77,7 @@ font-size: 20px;
 }
 
 .res-container .res-card:hover{
-  height: 230px;
+  height: 40vh;
 }
 
 .res-container .res-card .imgBx{
