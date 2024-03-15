@@ -180,7 +180,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<TitleComponent/>);
 ------------------------------------------------------------------------------------
-Destructured Props:
+Note:
+JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.
+------------------------------------------------------------------------------------
+EP3: Destructured Props:
 
 /* The `const RestaurantCard = ({resname , Cuisine, rating , delivery}) => {` is defining a functional
 component in React called `RestaurantCard`. This component takes in an object as its props with
