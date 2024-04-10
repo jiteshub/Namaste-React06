@@ -418,7 +418,7 @@ const AppLayout = () => {
   );
 };
 
------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To create multiple elements using .map():
 
 /* The code `{reslist.map((Restaurant)=>(<RestaurantCard resData={Restaurant}/>))}` is using
@@ -426,3 +426,87 @@ To create multiple elements using .map():
         (representing a food item), it creates a `RestaurantCard` component and passes the data of that specific food item as props to the `RestaurantCard` component. 
         This way, it dynamically generates multiple instances of the `RestaurantCard` component, each displaying information
         about a different food item from the `reslist` array. */
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+   * The function fetchData fetches restaurant data from a specific API endpoint and sets the retrieved
+   * data to state variables for further processing.
+   */
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  /**
+   * The function fetchData asynchronously fetches restaurant data from a specific URL and logs the
+   * JSON response.
+   */
+  const fetchData = async () =>{
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667"
+
+    );
+    const json = await data.json(); ->converts data to json
+    console.log(json)
+
+
+  /* The code snippet
+  `setRestaurantlist(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)`
+  and
+  `setfilterRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)`
+  is setting the state variables `Restaurantlist` and `filterRestaurant` with the restaurant data
+  retrieved from the API response. */
+
+  setRestaurantlist(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+  setfilterRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+  }
+
+  (json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants) -> Option chaining
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  /* This code snippet is creating a router configuration using the `createBrowserRouter` function from
+the `react-router-dom` library. */
+const Router = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    
+    /* The `children` property in the router configuration is defining the nested routes within the
+    main route "/". Each object inside the `children` array represents a specific route
+    configuration with the following properties: */
+    children: [
+      { path: "/", element: <Body/>, errorElement: <Error /> },
+      { path: "/about", element: <About />, errorElement: <Error /> },
+      { path: "/contact", element: <Contact />, errorElement: <Error /> },
+    ],
+    errorElement: <Error />,
+  },
+]);
+
+/* The `root.render(<RouterProvider router={Router} />);` statement is rendering the application's main
+component tree using the `RouterProvider` component from the `react-router-dom` library. */
+
+root.render(<RouterProvider router={Router} />);
+
+/* `createBrowserRouter` is a function provided by the `react-router-dom` library that creates
+a router configuration object. This object defines the routes and components to be rendered
+based on the current URL path. */
+
+/* The `router={Router}` part in the `RouterProvider` component is passing
+the router configuration created using the `createBrowserRouter`
+function to the `RouterProvider`. This allows the `RouterProvider` to
+use the defined routes and handle the routing logic for the application
+based on the configuration provided in the `Router` object. Essentially,
+it connects the application's components to the defined routes and
+enables navigation within the application based on those routes. */
+
+/* `<RouterProvider` is a component provided by the `react-router-dom` library that is used
+to provide the router configuration to the application. 
+In this code snippet,
+`<RouterProvider` is being used to pass the `Router` configuration created using
+`createBrowserRouter` to the application. This allows the application to utilize the
+defined routes and components for navigation and rendering based on the URL paths. */
+
+/*`<Outlet/>` is a placeholder component provided by React Router. It is used to render the
+  child route components within the parent route component. In the given code snippet,
+  `<Outlet/>` is being used inside the `AppLayout` component to render the child route
+  components based on the current route defined in the router configuration. */
